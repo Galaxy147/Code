@@ -1,0 +1,9 @@
+{
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.executorMap": {
+        "csharp": "cd $dir && csc $fileName /checked /r:System.Net.Http.dll /langversion:latest /o+ && $dir$fileNameWithoutExt"
+    },
+    "editor.fontWeight": "bold",
+    "editor.fontSize": 18,
+}
