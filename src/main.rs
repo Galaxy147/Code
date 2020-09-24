@@ -29,7 +29,6 @@ fn main()
     println!("s1 = {0},s2 = {1}", s1,s2);
     let s2 = &mut s1;
     s2.push_str("Runoob");
-    println!("Now,s1 = {0},s2 = {1}", s1, s2);
 }
 
 
