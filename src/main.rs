@@ -11,7 +11,22 @@ fn main()
     for i in a.iter() {
         println!("{}", i);
     }
-    println!("num1 = {0}", num1)
+    println!("num1 = {0}", num1);
+
+    let b = ['/', 'G', 'A', 'L', 'A', 'X', 'Y'];
+    let mut i = 0;
+    let location = loop
+    {
+        let ch = b[i];
+        if ch == 'X' {
+            break i;
+        }
+        i += 1;
+    };
+    println!("location is :{0}", location);
+    let s1 = String::from("Hello");
+    let s2 = s1.clone();
+    println!("s1 = {0},s2 = {1}", s1,s2);
 }
 
 
