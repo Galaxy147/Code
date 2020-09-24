@@ -24,9 +24,12 @@ fn main()
         i += 1;
     };
     println!("location is :{0}", location);
-    let s1 = String::from("Hello");
+    let mut s1 = String::from("Hello");
     let s2 = s1.clone();
     println!("s1 = {0},s2 = {1}", s1,s2);
+    let s2 = &mut s1;
+    s2.push_str("Runoob");
+    println!("Now,s1 = {0},s2 = {1}", s1, s2);
 }
 
 
